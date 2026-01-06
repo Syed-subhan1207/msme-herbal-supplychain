@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Herb chain-Blockchain based MSME Supply Chain Traceability</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ETHERS.JS (THIS WAS MISSING ❗❗❗) -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+
+<body>
+  <h1>Herb chain-Blockchain based MSME Supply Chain Traceability</h1>
+  <p>Transparent • Immutable • Trustless • Farmer-to-Consumer Traceability</p>
+
+  <button onclick="connectWallet()">Connect Wallet</button>
+  <p id="walletStatus">Not Connected</p>
+
+  <hr>
+
+  <h2>Farmer Panel</h2>
+  <input id="farmerName" placeholder="Farmer Name">
+  <input id="farmerLocation" placeholder="Village / State">
+  <input id="farmerDetails" placeholder="Crop, organic status">
+  <button onclick="addFarmer()">Submit Farmer Record</button>
+
+  <h2>Processor Panel</h2>
+  <input id="procProductId" placeholder="Product ID">
+  <input id="processorName" placeholder="Processor Name">
+  <input id="processorLocation" placeholder="Processing Location">
+  <input id="processorDetails" placeholder="Processing details">
+  <button onclick="addProcessor()">Submit Processor Record</button>
+
+  <h2>Distributor Panel</h2>
+  <input id="distProductId" placeholder="Product ID">
+  <input id="distributorName" placeholder="Distributor Name">
+  <input id="distributorLocation" placeholder="Warehouse / City">
+  <input id="distributorDetails" placeholder="Packaging details">
+  <button onclick="addDistributor()">Submit Distributor Record</button>
+
+  <h2>Consumer Verification</h2>
+  <input id="viewProductId" placeholder="Product ID">
+  <button onclick="viewHistory()">View Product History</button>
+
+  <pre id="output"></pre>
+
+  <!-- YOUR APP LOGIC -->
+  <script src="app.js"></script>
+</body>
+</html>
+

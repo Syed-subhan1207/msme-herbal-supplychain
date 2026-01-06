@@ -1,0 +1,157 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  color: #eafaf1;
+  padding: 40px;
+}
+
+/* ===== HEADER ===== */
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #1de9b6;
+  letter-spacing: 1px;
+}
+
+p {
+  text-align: center;
+  opacity: 0.85;
+  margin-bottom: 30px;
+}
+
+/* ===== WALLET BAR ===== */
+button[onclick="connectWallet()"] {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #1de9b6, #00e5ff);
+  border: none;
+  border-radius: 10px;
+  color: #002b36;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+button[onclick="connectWallet()"]:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #1de9b6;
+}
+
+#walletStatus {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+  color: #a7ffeb;
+}
+
+/* ===== GRID LAYOUT ===== */
+hr {
+  border: none;
+  margin: 30px 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #00e5ff;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ===== PANELS ===== */
+body > h2 {
+  margin-top: 30px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(0,0,0,0.4);
+  color: #eafaf1;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+input::placeholder {
+  color: #b2dfdb;
+}
+
+/* ===== ACTION BUTTONS ===== */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00e5ff, #1de9b6);
+  color: #002b36;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(29, 233, 182, 0.4);
+}
+
+/* ===== OUTPUT BOX ===== */
+pre {
+  background: rgba(0,0,0,0.6);
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 15px;
+  max-height: 250px;
+  overflow-y: auto;
+  font-size: 0.85rem;
+  color: #e0f2f1;
+}
+
+/* ===== RESPONSIVE GRID ===== */
+@media (min-width: 900px) {
+  body {
+    padding: 60px;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  body > h2,
+  body > input,
+  body > button {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body > h2 + input {
+    margin-top: 15px;
+  }
+
+  body > h2 + input + button {
+    margin-bottom: 30px;
+  }
+}
+
