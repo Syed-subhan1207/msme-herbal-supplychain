@@ -28,8 +28,8 @@ Each update is immutable and traceable by product ID.
 - Event emission for future analytics
 
 ## Demo Videos
-Frontend Demo: (paste drive link here)
-Smart Contract Demo: (paste drive link here)
+Frontend Demo:https://drive.google.com/file/d/1Yyr8yWUnEjqL2crKEjoOvsLLhfyPgxWI/view?usp=drivesdk
+Smart Contract Demo:https://drive.google.com/file/d/1Mq-nRwNVSbty7HRu-nUFNKRnDvMmhg9w/view?usp=drivesdk
 
 ## Status
 Due to testnet faucet issues, full live transaction execution could not be shown, but contract logic and UI integration are fully implemented and demonstrated.
